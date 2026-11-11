@@ -1,0 +1,1258 @@
+{
+  "rules_version": "1.0.1",
+  "source": "soulscale_purgatory_v101.py (auto-dumped by tools/py_harness/dump_card_data.py)",
+  "cards": [
+    {
+      "key": "candle",
+      "faction": "heaven",
+      "emoji": "🕯️",
+      "name": "Candle of Warmth",
+      "valid_chambers": [
+        "Body",
+        "Heart"
+      ],
+      "type_label": "Direct / Guard",
+      "aspect": "Warmth",
+      "stack_value": 2,
+      "rarity": "Common",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "body_bonus",
+      "help_text": "A reliable comfort push. +1 extra in Body."
+    },
+    {
+      "key": "open_hand",
+      "faction": "heaven",
+      "emoji": "🤲",
+      "name": "Open Hand",
+      "valid_chambers": [
+        "Heart",
+        "Memory"
+      ],
+      "type_label": "Direct",
+      "aspect": "Mercy",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "behind_bonus",
+      "help_text": "A mercy play. Stronger if the Soul is below 0."
+    },
+    {
+      "key": "calm_breath",
+      "faction": "heaven",
+      "emoji": "🌊",
+      "name": "Calm Breath",
+      "valid_chambers": [
+        "Mind",
+        "Body",
+        "Heart"
+      ],
+      "type_label": "Disruption / Cleanse",
+      "aspect": "Calm",
+      "stack_value": 1,
+      "rarity": "Rare",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 0,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "calm",
+      "help_text": "Weakens opposing plays in the same Chamber, or cleanses Devil effects."
+    },
+    {
+      "key": "hymn",
+      "faction": "heaven",
+      "emoji": "🎵",
+      "name": "Hymn",
+      "valid_chambers": [
+        "Mind",
+        "Heart"
+      ],
+      "type_label": "Ongoing",
+      "aspect": "Harmony",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 0,
+      "ongoing_move": 1,
+      "ongoing": true,
+      "trap": false,
+      "guard": false,
+      "special": "hymn",
+      "help_text": "Ongoing: pushes +1 each round."
+    },
+    {
+      "key": "rest",
+      "faction": "heaven",
+      "emoji": "🛏️",
+      "name": "Rest",
+      "valid_chambers": [
+        "Body",
+        "Time"
+      ],
+      "type_label": "Direct / Cleanse",
+      "aspect": "Rest",
+      "stack_value": 2,
+      "rarity": "Common",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "rest",
+      "help_text": "Pushes Heaven and removes one Devil effect in this Chamber."
+    },
+    {
+      "key": "loved_memory",
+      "faction": "heaven",
+      "emoji": "💌",
+      "name": "Loved Memory",
+      "valid_chambers": [
+        "Memory",
+        "Heart"
+      ],
+      "type_label": "Direct / Cleanse",
+      "aspect": "Memory",
+      "stack_value": 3,
+      "rarity": "Rare",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 2,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "loved_memory",
+      "help_text": "Strong Heaven push. In Memory, dissolves one Devil effect before scoring."
+    },
+    {
+      "key": "guardian",
+      "faction": "heaven",
+      "emoji": "🪽",
+      "name": "Guardian",
+      "valid_chambers": [
+        "Body",
+        "Mind",
+        "Heart",
+        "Time",
+        "Memory"
+      ],
+      "type_label": "Ongoing / Guard",
+      "aspect": "Sanctuary",
+      "stack_value": 2,
+      "rarity": "Rare",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 0,
+      "ongoing_move": 0,
+      "ongoing": true,
+      "trap": false,
+      "guard": true,
+      "special": "guardian",
+      "help_text": "Ongoing guard: Devil plays in this Chamber lose 2 power."
+    },
+    {
+      "key": "little_miracle",
+      "faction": "heaven",
+      "emoji": "✨",
+      "name": "Little Miracle",
+      "valid_chambers": [
+        "Body",
+        "Mind",
+        "Heart",
+        "Time",
+        "Memory"
+      ],
+      "type_label": "Wild",
+      "aspect": "Wonder",
+      "stack_value": 1,
+      "rarity": "Rare",
+      "prices": [
+        "Volatile"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 0,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "miracle",
+      "help_text": "Wild: rolls for Will or a burst Heaven push."
+    },
+    {
+      "key": "hope",
+      "faction": "heaven",
+      "emoji": "🌤️",
+      "name": "Hope",
+      "valid_chambers": [
+        "Heart",
+        "Time"
+      ],
+      "type_label": "Scaling",
+      "aspect": "Hope",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [
+        "Desperate"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "behind_bonus",
+      "help_text": "Pushes Heaven. Stronger when Heaven is losing."
+    },
+    {
+      "key": "bell",
+      "faction": "heaven",
+      "emoji": "🔔",
+      "name": "Bell of Mercy",
+      "valid_chambers": [
+        "Body",
+        "Mind",
+        "Heart",
+        "Time",
+        "Memory"
+      ],
+      "type_label": "Disruption",
+      "aspect": "Mercy",
+      "stack_value": 1,
+      "rarity": "Rare",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 0,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "bell",
+      "help_text": "Cancels one Devil ongoing/trap in the chosen Chamber."
+    },
+    {
+      "key": "small_comfort",
+      "faction": "heaven",
+      "emoji": "🧸",
+      "name": "Small Comfort",
+      "valid_chambers": [
+        "Body",
+        "Heart"
+      ],
+      "type_label": "Support",
+      "aspect": "Comfort",
+      "stack_value": 2,
+      "rarity": "Common",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "support_next",
+      "help_text": "Small push. Your next Heaven effect gets +1."
+    },
+    {
+      "key": "sweetness",
+      "faction": "heaven",
+      "emoji": "🍯",
+      "name": "Sweetness",
+      "valid_chambers": [
+        "Body",
+        "Heart"
+      ],
+      "type_label": "Direct / Will",
+      "aspect": "Pleasure",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "sweetness",
+      "help_text": "Pushes Heaven. If Heaven is ahead, gain +1 Will next round."
+    },
+    {
+      "key": "lightness",
+      "faction": "heaven",
+      "emoji": "🪶",
+      "name": "Lightness",
+      "valid_chambers": [
+        "Body",
+        "Mind",
+        "Heart"
+      ],
+      "type_label": "Direct / Echo",
+      "aspect": "Ease",
+      "stack_value": 1,
+      "rarity": "Common",
+      "prices": [
+        "Echo"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "lightness",
+      "help_text": "Gentle push. Echo repeats as a small +1 Heaven nudge next round."
+    },
+    {
+      "key": "purpose",
+      "faction": "heaven",
+      "emoji": "🧭",
+      "name": "Purpose",
+      "valid_chambers": [
+        "Mind",
+        "Time"
+      ],
+      "type_label": "Direct / Comeback",
+      "aspect": "Purpose",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [
+        "Desperate"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "purpose",
+      "help_text": "Desperate: stronger while Heaven is behind, weaker while Heaven is already ahead."
+    },
+    {
+      "key": "sanctuary",
+      "faction": "heaven",
+      "emoji": "🏰",
+      "name": "Sanctuary",
+      "valid_chambers": [
+        "Body",
+        "Heart"
+      ],
+      "type_label": "Ongoing / Guard",
+      "aspect": "Sanctuary",
+      "stack_value": 3,
+      "rarity": "Rare",
+      "prices": [
+        "Heavy",
+        "Binding"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 3,
+      "base_move": 0,
+      "ongoing_move": 0,
+      "ongoing": true,
+      "trap": false,
+      "guard": true,
+      "special": "sanctuary",
+      "help_text": "Heavy Binding guard. Very strong defense, but costs Will and locks that Chamber next round."
+    },
+    {
+      "key": "dawn",
+      "faction": "heaven",
+      "emoji": "☀️",
+      "name": "Dawn",
+      "valid_chambers": [
+        "Time",
+        "Heart"
+      ],
+      "type_label": "Direct / Delayed",
+      "aspect": "Renewal",
+      "stack_value": 2,
+      "rarity": "Rare",
+      "prices": [
+        "Delayed"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 2,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "dawn",
+      "help_text": "Delayed: schedules its Heaven movement for the next round instead of scoring immediately."
+    },
+    {
+      "key": "tea_quiet",
+      "faction": "heaven",
+      "emoji": "🫖",
+      "name": "Tea & Quiet",
+      "valid_chambers": [
+        "Mind"
+      ],
+      "type_label": "Direct / Narrow",
+      "aspect": "Calm",
+      "stack_value": 1,
+      "rarity": "Common",
+      "prices": [
+        "Narrow"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "tea_quiet",
+      "help_text": "Efficient Mind-only calm. Narrow but reliable."
+    },
+    {
+      "key": "acceptance",
+      "faction": "heaven",
+      "emoji": "🪷",
+      "name": "Acceptance",
+      "valid_chambers": [
+        "Mind",
+        "Memory"
+      ],
+      "type_label": "Disruption / Cleanse",
+      "aspect": "Acceptance",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [
+        "Hungry"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "acceptance",
+      "help_text": "Hungry cleanse. Consumes friendly stack if possible; removes a Devil effect/condition here."
+    },
+    {
+      "key": "silver_thread",
+      "faction": "heaven",
+      "emoji": "🧵",
+      "name": "Silver Thread",
+      "valid_chambers": [
+        "Heart",
+        "Memory"
+      ],
+      "type_label": "Support / Fragile",
+      "aspect": "Connection",
+      "stack_value": 3,
+      "rarity": "Rare",
+      "prices": [
+        "Fragile"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "support_next",
+      "help_text": "Fragile support. Builds a powerful connection stack and boosts the next Heaven effect."
+    },
+    {
+      "key": "grace",
+      "faction": "heaven",
+      "emoji": "🕊️",
+      "name": "Grace",
+      "valid_chambers": [
+        "Heart",
+        "Memory"
+      ],
+      "type_label": "Direct / Rescue",
+      "aspect": "Grace",
+      "stack_value": 2,
+      "rarity": "Rare",
+      "prices": [
+        "Heavy",
+        "Desperate"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 2,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "grace",
+      "help_text": "Heavy rescue. Stronger when Heaven is behind; expensive when you are trying to turn the tide."
+    },
+    {
+      "key": "ache",
+      "faction": "hell",
+      "emoji": "🦷",
+      "name": "Ache",
+      "valid_chambers": [
+        "Body"
+      ],
+      "type_label": "Direct / Ongoing",
+      "aspect": "Pain",
+      "stack_value": 2,
+      "rarity": "Common",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 1,
+      "ongoing": true,
+      "trap": false,
+      "guard": false,
+      "special": "ache",
+      "help_text": "Pushes Hell and leaves ongoing Body pain."
+    },
+    {
+      "key": "screech",
+      "faction": "hell",
+      "emoji": "🔊",
+      "name": "Screech",
+      "valid_chambers": [
+        "Mind"
+      ],
+      "type_label": "Direct",
+      "aspect": "Noise",
+      "stack_value": 2,
+      "rarity": "Common",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "screech",
+      "help_text": "Pushes Hell. Stronger if the Soul is already below 0."
+    },
+    {
+      "key": "fly_swarm",
+      "faction": "hell",
+      "emoji": "🪰",
+      "name": "Fly Swarm",
+      "valid_chambers": [
+        "Body",
+        "Mind"
+      ],
+      "type_label": "Ongoing",
+      "aspect": "Irritation",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 0,
+      "ongoing_move": 1,
+      "ongoing": true,
+      "trap": false,
+      "guard": false,
+      "special": "fly",
+      "help_text": "Ongoing: pushes -1 each round."
+    },
+    {
+      "key": "void_thought",
+      "faction": "hell",
+      "emoji": "🕳️",
+      "name": "Void Thought",
+      "valid_chambers": [
+        "Mind",
+        "Time"
+      ],
+      "type_label": "Scaling",
+      "aspect": "Despair",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [
+        "Desperate"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "behind_bonus",
+      "help_text": "Pushes Hell. Stronger when Hell is losing."
+    },
+    {
+      "key": "memory_thorn",
+      "faction": "hell",
+      "emoji": "🥀",
+      "name": "Memory Thorn",
+      "valid_chambers": [
+        "Memory",
+        "Heart"
+      ],
+      "type_label": "Direct / Condition",
+      "aspect": "Regret",
+      "stack_value": 3,
+      "rarity": "Rare",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "thorn",
+      "help_text": "Pushes Hell and leaves Thorn to weaken Loved Memory."
+    },
+    {
+      "key": "burden",
+      "faction": "hell",
+      "emoji": "⛓️",
+      "name": "Burden",
+      "valid_chambers": [
+        "Body",
+        "Time"
+      ],
+      "type_label": "Direct / Delay",
+      "aspect": "Weight",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "burden",
+      "help_text": "Pushes Hell and reduces opponent Will next round."
+    },
+    {
+      "key": "false_door",
+      "faction": "hell",
+      "emoji": "🪤",
+      "name": "False Door",
+      "valid_chambers": [
+        "Body",
+        "Mind",
+        "Heart",
+        "Time",
+        "Memory"
+      ],
+      "type_label": "Trap",
+      "aspect": "Trap",
+      "stack_value": 1,
+      "rarity": "Rare",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 0,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": true,
+      "guard": false,
+      "special": "false_door",
+      "help_text": "Trap: next Angel play in this Chamber loses 3 power, then vanishes."
+    },
+    {
+      "key": "watching_eye",
+      "faction": "hell",
+      "emoji": "👁️",
+      "name": "Watching Eye",
+      "valid_chambers": [
+        "Mind",
+        "Memory"
+      ],
+      "type_label": "Control",
+      "aspect": "Dread",
+      "stack_value": 1,
+      "rarity": "Rare",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 0,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "watching_eye",
+      "help_text": "Gives Hell +1 Will next round and a small Hell push."
+    },
+    {
+      "key": "endless_wait",
+      "faction": "hell",
+      "emoji": "⏳",
+      "name": "Endless Wait",
+      "valid_chambers": [
+        "Time"
+      ],
+      "type_label": "Ongoing / Cap",
+      "aspect": "Stasis",
+      "stack_value": 2,
+      "rarity": "Rare",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 0,
+      "ongoing_move": 1,
+      "ongoing": true,
+      "trap": false,
+      "guard": false,
+      "special": "endless_wait",
+      "help_text": "Ongoing Hell pressure. Caps Heaven movement next round."
+    },
+    {
+      "key": "cold_room",
+      "faction": "hell",
+      "emoji": "🧊",
+      "name": "Cold Room",
+      "valid_chambers": [
+        "Body",
+        "Heart"
+      ],
+      "type_label": "Direct / Condition",
+      "aspect": "Cold",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "cold",
+      "help_text": "Pushes Hell and leaves Cold, weakening warmth/comfort here."
+    },
+    {
+      "key": "tangled_desire",
+      "faction": "hell",
+      "emoji": "🧵",
+      "name": "Tangled Desire",
+      "valid_chambers": [
+        "Heart"
+      ],
+      "type_label": "Disruption",
+      "aspect": "Frustration",
+      "stack_value": 1,
+      "rarity": "Rare",
+      "prices": [],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 0,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "tangle",
+      "help_text": "Disrupts Heart. Weakens opposing Heart plays and can Sever stack well."
+    },
+    {
+      "key": "serpent",
+      "faction": "hell",
+      "emoji": "🐍",
+      "name": "Whispering Serpent",
+      "valid_chambers": [
+        "Body",
+        "Mind",
+        "Heart",
+        "Time",
+        "Memory"
+      ],
+      "type_label": "Wild",
+      "aspect": "Temptation",
+      "stack_value": 1,
+      "rarity": "Rare",
+      "prices": [
+        "Volatile"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 0,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "serpent",
+      "help_text": "Wild: rolls for Will drain or a burst Hell push."
+    },
+    {
+      "key": "weight",
+      "faction": "hell",
+      "emoji": "🪨",
+      "name": "Weight",
+      "valid_chambers": [
+        "Body",
+        "Time"
+      ],
+      "type_label": "Direct / Heavy",
+      "aspect": "Weight",
+      "stack_value": 2,
+      "rarity": "Common",
+      "prices": [
+        "Heavy"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 2,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "weight",
+      "help_text": "Heavy reliable Hell pressure. Strong for a common, but costs Will or loses force."
+    },
+    {
+      "key": "snare",
+      "faction": "hell",
+      "emoji": "🕸️",
+      "name": "Snare",
+      "valid_chambers": [
+        "Body",
+        "Time"
+      ],
+      "type_label": "Trap / Fragile",
+      "aspect": "Trap",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [
+        "Fragile"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 0,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": true,
+      "guard": false,
+      "special": "false_door",
+      "help_text": "Fragile trap. Strong tempo catch if uncontested, poor if Angel fights the same Chamber."
+    },
+    {
+      "key": "fever",
+      "faction": "hell",
+      "emoji": "🔥",
+      "name": "Fever",
+      "valid_chambers": [
+        "Body",
+        "Mind"
+      ],
+      "type_label": "Direct / Volatile",
+      "aspect": "Fever",
+      "stack_value": 3,
+      "rarity": "Rare",
+      "prices": [
+        "Volatile"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 2,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "fever",
+      "help_text": "Volatile burst. Weak rolls lose force; surge rolls bite harder."
+    },
+    {
+      "key": "obsession",
+      "faction": "hell",
+      "emoji": "🧿",
+      "name": "Obsession",
+      "valid_chambers": [
+        "Heart",
+        "Memory"
+      ],
+      "type_label": "Ongoing / Binding",
+      "aspect": "Obsession",
+      "stack_value": 3,
+      "rarity": "Rare",
+      "prices": [
+        "Binding"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 1,
+      "ongoing_move": 1,
+      "ongoing": true,
+      "trap": false,
+      "guard": false,
+      "special": "obsession",
+      "help_text": "Binding ongoing lock. Good pressure, but you cannot use that Chamber next round."
+    },
+    {
+      "key": "futility",
+      "faction": "hell",
+      "emoji": "🪦",
+      "name": "Futility",
+      "valid_chambers": [
+        "Mind",
+        "Time"
+      ],
+      "type_label": "Direct / Delayed",
+      "aspect": "Futility",
+      "stack_value": 2,
+      "rarity": "Uncommon",
+      "prices": [
+        "Delayed"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 2,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "futility",
+      "help_text": "Delayed despair pulse. Telegraphs pressure instead of scoring immediately."
+    },
+    {
+      "key": "rupture",
+      "faction": "hell",
+      "emoji": "🧨",
+      "name": "Rupture",
+      "valid_chambers": [
+        "Body",
+        "Memory"
+      ],
+      "type_label": "Direct / Hungry",
+      "aspect": "Rupture",
+      "stack_value": 3,
+      "rarity": "Rare",
+      "prices": [
+        "Hungry"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 2,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "rupture",
+      "help_text": "Hungry burst. Feeds on Hell stack; painful if prepared, blunter if played naked."
+    },
+    {
+      "key": "crawling_skin",
+      "faction": "hell",
+      "emoji": "🐜",
+      "name": "Crawling Skin",
+      "valid_chambers": [
+        "Body",
+        "Mind"
+      ],
+      "type_label": "Direct / Echo",
+      "aspect": "Irritation",
+      "stack_value": 1,
+      "rarity": "Common",
+      "prices": [
+        "Echo"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 1,
+      "base_move": 1,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "crawling_skin",
+      "help_text": "Low irritation. Echo repeats as a small -1 Hell nudge next round."
+    },
+    {
+      "key": "shame_mirror",
+      "faction": "hell",
+      "emoji": "🪞",
+      "name": "Shame Mirror",
+      "valid_chambers": [
+        "Memory"
+      ],
+      "type_label": "Direct / Narrow",
+      "aspect": "Shame",
+      "stack_value": 3,
+      "rarity": "Rare",
+      "prices": [
+        "Narrow",
+        "Fragile"
+      ],
+      "movement_type": "ownerward",
+      "base_power": 2,
+      "base_move": 2,
+      "ongoing_move": 0,
+      "ongoing": false,
+      "trap": false,
+      "guard": false,
+      "special": "thorn",
+      "help_text": "Memory-only rare. Brutal if protected, fragile if Angel contests Memory."
+    }
+  ],
+  "decks": {
+    "heaven": [
+      {
+        "name": "Starter Mercy",
+        "cards": [
+          "candle",
+          "open_hand",
+          "rest",
+          "hymn",
+          "lightness",
+          "tea_quiet",
+          "hope",
+          "small_comfort",
+          "sweetness",
+          "loved_memory"
+        ]
+      },
+      {
+        "name": "Comfort Engine",
+        "cards": [
+          "candle",
+          "candle",
+          "rest",
+          "small_comfort",
+          "sweetness",
+          "lightness",
+          "tea_quiet",
+          "open_hand",
+          "hymn",
+          "guardian"
+        ]
+      },
+      {
+        "name": "Sanctuary Control",
+        "cards": [
+          "guardian",
+          "sanctuary",
+          "calm_breath",
+          "bell",
+          "hymn",
+          "rest",
+          "acceptance",
+          "tea_quiet",
+          "hope",
+          "lightness"
+        ]
+      },
+      {
+        "name": "Hope From Behind",
+        "cards": [
+          "hope",
+          "purpose",
+          "grace",
+          "open_hand",
+          "loved_memory",
+          "rest",
+          "calm_breath",
+          "little_miracle",
+          "candle",
+          "lightness"
+        ]
+      },
+      {
+        "name": "Memory Loom",
+        "cards": [
+          "loved_memory",
+          "silver_thread",
+          "acceptance",
+          "open_hand",
+          "grace",
+          "lightness",
+          "hope",
+          "small_comfort",
+          "rest",
+          "tea_quiet"
+        ]
+      },
+      {
+        "name": "Delayed Dawn",
+        "cards": [
+          "dawn",
+          "purpose",
+          "hymn",
+          "guardian",
+          "candle",
+          "rest",
+          "lightness",
+          "tea_quiet",
+          "small_comfort",
+          "sweetness"
+        ]
+      }
+    ],
+    "hell": [
+      {
+        "name": "Starter Torment",
+        "cards": [
+          "ache",
+          "screech",
+          "fly_swarm",
+          "void_thought",
+          "burden",
+          "cold_room",
+          "weight",
+          "crawling_skin",
+          "futility",
+          "memory_thorn"
+        ]
+      },
+      {
+        "name": "Pain Engine",
+        "cards": [
+          "ache",
+          "ache",
+          "screech",
+          "fly_swarm",
+          "cold_room",
+          "burden",
+          "weight",
+          "crawling_skin",
+          "void_thought",
+          "serpent"
+        ]
+      },
+      {
+        "name": "Despair Control",
+        "cards": [
+          "void_thought",
+          "memory_thorn",
+          "endless_wait",
+          "watching_eye",
+          "false_door",
+          "snare",
+          "futility",
+          "burden",
+          "crawling_skin",
+          "screech"
+        ]
+      },
+      {
+        "name": "Trickster Hell",
+        "cards": [
+          "false_door",
+          "watching_eye",
+          "tangled_desire",
+          "serpent",
+          "screech",
+          "snare",
+          "crawling_skin",
+          "futility",
+          "burden",
+          "void_thought"
+        ]
+      },
+      {
+        "name": "Fever Break",
+        "cards": [
+          "fever",
+          "rupture",
+          "weight",
+          "ache",
+          "crawling_skin",
+          "burden",
+          "cold_room",
+          "fly_swarm",
+          "void_thought",
+          "screech"
+        ]
+      },
+      {
+        "name": "Memory Shame",
+        "cards": [
+          "shame_mirror",
+          "memory_thorn",
+          "obsession",
+          "watching_eye",
+          "snare",
+          "futility",
+          "void_thought",
+          "crawling_skin",
+          "burden",
+          "screech"
+        ]
+      }
+    ]
+  },
+  "ai_profiles": [
+    {
+      "label": "Novice / Forgiving",
+      "description": "Loose and a bit wasteful. Good for learning the board.",
+      "aggression": 0.75,
+      "planning": 0.45,
+      "disruption": 0.45,
+      "release_hunger": 0.35,
+      "randomness": 2.2,
+      "reroll_bias": 0.25
+    },
+    {
+      "label": "Balanced / Tactical",
+      "description": "Reasonable tactical play with some personality noise.",
+      "aggression": 1.0,
+      "planning": 1.0,
+      "disruption": 0.9,
+      "release_hunger": 0.85,
+      "randomness": 0.9,
+      "reroll_bias": 0.65
+    },
+    {
+      "label": "Architect / Stack Builder",
+      "description": "Prefers Anchor, protects strong Chambers, then releases hard.",
+      "aggression": 0.9,
+      "planning": 1.75,
+      "disruption": 0.8,
+      "release_hunger": 1.1,
+      "randomness": 0.65,
+      "reroll_bias": 0.7
+    },
+    {
+      "label": "Cruel Accountant / Hard",
+      "description": "Calculating, low-noise, contests leverage and rerolls important plays.",
+      "aggression": 1.25,
+      "planning": 1.25,
+      "disruption": 1.35,
+      "release_hunger": 1.3,
+      "randomness": 0.25,
+      "reroll_bias": 1.0
+    },
+    {
+      "label": "Chaos Imp / Weird",
+      "description": "High-variance gremlin. Sometimes brilliant, sometimes soup.",
+      "aggression": 1.05,
+      "planning": 0.65,
+      "disruption": 1.1,
+      "release_hunger": 1.45,
+      "randomness": 2.8,
+      "reroll_bias": 0.8
+    }
+  ]
+}

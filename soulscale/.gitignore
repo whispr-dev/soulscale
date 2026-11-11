@@ -1,0 +1,24 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+/target/
+/client/node_modules/
+/client/dist/
+
+# Runtime data (saved games, replays)
+/data/
+
+# Test output
+/qa-shots/
+/tools/py_harness/__pycache__/
+**/__pycache__/
+
+# Editors / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+Thumbs.db
+.DS_Store

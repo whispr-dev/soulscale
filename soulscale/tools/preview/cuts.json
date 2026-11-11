@@ -1,0 +1,65 @@
+{
+  "about": "Cuts for the shipped preview, timed against the recording made on 11 Nov 2026 (record.py --seed 5). A new recording plays a different game, so pick new times from contact sheets (make_preview.py sheet). Crops are [x, y, width] in the 960x720 recording; height is width * 3/4.",
+  "cuts": [
+    {
+      "what": "title and sigil ring",
+      "start": 0.5,
+      "end": 2.4,
+      "crop_from": [
+        130,
+        0,
+        700
+      ],
+      "crop_to": [
+        175,
+        15,
+        610
+      ]
+    },
+    {
+      "what": "browse the hand, pick Hope, Chambers light up",
+      "start": 168.6,
+      "end": 171.4,
+      "crop_from": [
+        100,
+        150,
+        760
+      ],
+      "crop_to": [
+        150,
+        175,
+        700
+      ]
+    },
+    {
+      "what": "cards fly into Time, clash 5 vs 7, the Soul is pulled",
+      "start": 176.9,
+      "end": 180.6,
+      "crop_from": [
+        0,
+        90,
+        840
+      ],
+      "crop_to": [
+        0,
+        140,
+        770
+      ]
+    },
+    {
+      "what": "the Soul drops to -12: Hell wins",
+      "start": 182.0,
+      "end": 184.4,
+      "crop_from": [
+        0,
+        100,
+        800
+      ],
+      "crop_to": [
+        10,
+        120,
+        730
+      ]
+    }
+  ]
+}

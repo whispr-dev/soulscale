@@ -1,0 +1,3 @@
+[env]
+# `cargo test -p soulscale-core --features ts` writes TypeScript protocol types here.
+TS_RS_EXPORT_DIR = { value = "client/src/protocol/generated", relative = true }

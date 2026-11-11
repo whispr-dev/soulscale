@@ -1,0 +1,32 @@
+[workspace]
+resolver = "3"
+members = ["crates/soulscale-core", "crates/soulscale-server", "crates/soulscale-sim"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+license = "LicenseRef-Soulscale"
+publish = false
+
+[workspace.dependencies]
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = { version = "=1.0.154", features = ["float_roundtrip"] }
+thiserror = "=2.0.21"
+anyhow = "=1.0.104"
+axum = { version = "=0.8.9", features = ["ws"] }
+tokio = { version = "=1.54.1", features = ["rt-multi-thread", "macros", "sync", "time", "signal", "net", "fs"] }
+tower-http = { version = "=0.7.1", features = ["fs", "trace", "set-header", "compression-gzip"] }
+reqwest = { version = "=0.13.5", default-features = false, features = ["rustls-no-provider", "form", "json"] }
+rustls = { version = "0.23", default-features = false, features = ["ring", "std", "tls12"] }
+tracing = "=0.1.44"
+tracing-subscriber = { version = "=0.3.23", features = ["env-filter", "fmt"] }
+clap = { version = "=4.6.7", features = ["derive"] }
+getrandom = "=0.4.3"
+futures-util = { version = "=0.3.34", default-features = false, features = ["sink", "std"] }
+dotenvy = "=0.15.7"
+ts-rs = { version = "=12.0.1", features = ["serde-compat"] }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

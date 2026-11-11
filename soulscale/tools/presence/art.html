@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- Rich Presence art (1024x1024 each). Render with render.py; upload in the Developer Portal under
+     Rich Presence > Art Assets with the keys soulscale, heaven and hell (the names the game sends). -->
+<html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:transparent}
+.tile{width:1024px;height:1024px;position:relative;overflow:hidden;display:grid;place-items:center}
+#soulscale{background:
+  radial-gradient(60% 45% at 50% 0%, rgba(255,214,140,.38), transparent 70%),
+  radial-gradient(60% 45% at 50% 100%, rgba(255,70,30,.36), transparent 70%),
+  radial-gradient(90% 90% at 50% 50%, #1d1430, #07050d 75%)}
+#soulscale .ring{position:absolute;inset:92px;border-radius:50%;
+  background:conic-gradient(from 200deg,#ffe7a8,#b9a0ff,#ff7a52,#b9a0ff,#ffe7a8);
+  -webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 18px),#000 calc(100% - 17px));
+  filter:drop-shadow(0 0 18px rgba(200,180,255,.8))}
+#soulscale .ring2{position:absolute;inset:132px;border-radius:50%;border:4px solid rgba(220,205,255,.35)}
+#soulscale .halo{position:absolute;width:640px;height:640px;border-radius:50%;
+  background:radial-gradient(circle,rgba(220,200,255,.45),rgba(169,139,255,.12) 55%,transparent 70%)}
+.glyph{position:relative}
+#soulscale .glyph{width:560px;height:560px;
+  filter:drop-shadow(10px 0 0 #fffaf0) drop-shadow(-10px 0 0 #fffaf0) drop-shadow(0 10px 0 #fffaf0) drop-shadow(0 -10px 0 #fffaf0)
+         drop-shadow(0 16px 0 #8a6420) drop-shadow(0 30px 36px rgba(0,0,0,.6)) drop-shadow(0 0 48px rgba(255,214,120,.55))}
+.badge{border-radius:50%}
+#heaven{background:radial-gradient(circle at 50% 35%,#fff6d8,#f3cf7a 45%,#b8862c 100%)}
+#hell{background:radial-gradient(circle at 50% 35%,#ffb199,#e2402a 45%,#5c0a18 100%)}
+.badge .glyph{width:620px;height:620px;
+  filter:drop-shadow(14px 0 0 #1a0f2a) drop-shadow(-14px 0 0 #1a0f2a) drop-shadow(0 14px 0 #1a0f2a) drop-shadow(0 -14px 0 #1a0f2a)
+         drop-shadow(0 22px 30px rgba(0,0,0,.45))}
+</style></head><body>
+<div class="tile" id="soulscale"><div class="halo"></div><div class="ring"></div><div class="ring2"></div><img class="glyph" src="../../client/public/glyphs/2696.svg"></div>
+<div class="tile badge" id="heaven"><img class="glyph" src="../../client/public/glyphs/1f607.svg"></div>
+<div class="tile badge" id="hell"><img class="glyph" src="../../client/public/glyphs/1f608.svg"></div>
+</body></html>

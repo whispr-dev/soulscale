@@ -1,0 +1,174 @@
+<!doctype html>
+<!-- The still artwork around the game footage in the Discord video preview (640x360).
+     Rendered to PNG by make_preview.py. Original art: a praying angel lit in gold on the left (the
+     blessed side, as in Last Judgement paintings) and a demon in ember light on the right, reaching
+     toward the board. The 4:3 window in the middle is transparent; the game footage shows through. -->
+<html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:transparent}
+svg{display:block}
+</style></head><body>
+<svg id="art" xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+<defs>
+  <!-- window the game shows through: x 100..540, y 15..345 (440x330, 4:3) -->
+  <radialGradient id="heavenHaze" cx="0.08" cy="0.05" r="0.75">
+    <stop offset="0" stop-color="#ffe2a0" stop-opacity="0.55"/>
+    <stop offset="0.35" stop-color="#c9953a" stop-opacity="0.22"/>
+    <stop offset="1" stop-color="#2a1d3d" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="hellHaze" cx="0.92" cy="0.98" r="0.8">
+    <stop offset="0" stop-color="#ff6a3a" stop-opacity="0.6"/>
+    <stop offset="0.35" stop-color="#a1182a" stop-opacity="0.25"/>
+    <stop offset="1" stop-color="#2a0d18" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="base" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#16101f"/>
+    <stop offset="0.5" stop-color="#0b0712"/>
+    <stop offset="1" stop-color="#1a0b12"/>
+  </linearGradient>
+  <linearGradient id="frameGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ffe7a8"/>
+    <stop offset="0.5" stop-color="#b9a0ff"/>
+    <stop offset="1" stop-color="#ff7a52"/>
+  </linearGradient>
+  <linearGradient id="angelRim" x1="0" y1="0" x2="1" y2="0.2">
+    <stop offset="0" stop-color="#f3cf7a" stop-opacity="0.15"/>
+    <stop offset="1" stop-color="#fff0c4" stop-opacity="0.95"/>
+  </linearGradient>
+  <linearGradient id="demonRim" x1="1" y1="0" x2="0" y2="0.3">
+    <stop offset="0" stop-color="#ff5a36" stop-opacity="0.2"/>
+    <stop offset="1" stop-color="#ffb08a" stop-opacity="0.95"/>
+  </linearGradient>
+  <linearGradient id="angelBody" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#2b2140"/>
+    <stop offset="1" stop-color="#140d22"/>
+  </linearGradient>
+  <linearGradient id="demonBody" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1c0c16"/>
+    <stop offset="1" stop-color="#2e0f17"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softglow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="5"/>
+  </filter>
+  <filter id="mote" x="-200%" y="-200%" width="500%" height="500%">
+    <feGaussianBlur stdDeviation="1.1"/>
+  </filter>
+  <mask id="hole">
+    <rect width="640" height="360" fill="#fff"/>
+    <rect x="100" y="15" width="440" height="330" rx="6" fill="#000"/>
+  </mask>
+</defs>
+
+<g mask="url(#hole)">
+  <rect width="640" height="360" fill="url(#base)"/>
+  <rect width="640" height="360" fill="url(#heavenHaze)"/>
+  <rect width="640" height="360" fill="url(#hellHaze)"/>
+
+  <!-- ===================== ANGEL (left) ===================== -->
+  <g id="angel">
+    <!-- light behind the head -->
+    <circle cx="58" cy="86" r="34" fill="#ffd98a" opacity="0.22" filter="url(#softglow)"/>
+    <!-- far wing (behind body), raised and sweeping off the top-left -->
+    <path d="M46 116 C 36 70, 22 34, -6 6 L -12 30 C 4 60, 14 96, 20 130 C 14 150, 6 176, 2 214
+             C 10 206, 16 200, 22 196 C 18 214, 14 232, 12 252 C 20 240, 26 232, 32 226
+             C 30 242, 30 256, 32 270 C 36 254, 40 240, 44 226 Z"
+          fill="url(#angelBody)" stroke="url(#angelRim)" stroke-width="0.9" stroke-opacity="0.75"/>
+    <!-- feather lines -->
+    <g fill="none" stroke="#f3cf7a" stroke-opacity="0.35" stroke-width="0.7" stroke-linecap="round">
+      <path d="M40 118 C 30 84, 18 54, 2 28"/>
+      <path d="M36 128 C 26 100, 14 76, 4 60"/>
+      <path d="M34 140 C 24 156, 12 180, 6 206"/>
+      <path d="M36 150 C 28 172, 20 196, 16 238"/>
+      <path d="M40 160 C 36 184, 32 214, 30 258"/>
+    </g>
+    <!-- robe and body, facing right toward the board, hands together -->
+    <path d="M57 103 C 50 104, 45 108, 42 116 C 38 132, 38 150, 41 166 C 42 184, 38 210, 33 240
+             C 28 272, 24 312, 20 362 L 96 362 C 92 330, 88 296, 84 262 C 80 232, 78 206, 77 184
+             C 77 170, 78 160, 80 152 C 86 146, 90 138, 92 128 C 93 122, 90 120, 87 124
+             C 85 128, 83 134, 79 138 C 77 128, 74 118, 69 110 C 66 106, 62 103, 57 103 Z"
+          fill="url(#angelBody)" stroke="url(#angelRim)" stroke-width="1.1"/>
+    <!-- robe folds -->
+    <g fill="none" stroke="#f3cf7a" stroke-opacity="0.22" stroke-width="0.8">
+      <path d="M58 170 C 56 220, 52 280, 46 360"/>
+      <path d="M68 176 C 68 230, 70 290, 74 360"/>
+      <path d="M48 190 C 44 240, 38 300, 34 360"/>
+    </g>
+    <!-- hands in prayer -->
+    <path d="M86 125 C 88 117, 91 112, 94 110 C 96 114, 95 122, 92 130 Z" fill="#3a2d52" stroke="#fff0c4" stroke-width="0.8" stroke-opacity="0.85"/>
+    <!-- hair falling down the back, behind the head -->
+    <path d="M60 80 C 52 84, 48 96, 48 112 C 52 110, 54 104, 56 98 C 55 106, 56 112, 58 116 C 60 104, 62 92, 64 84 Z" fill="#20172f" stroke="#f3cf7a" stroke-opacity="0.35" stroke-width="0.6"/>
+    <!-- head, bowed slightly toward the board -->
+    <ellipse cx="62" cy="91" rx="10.5" ry="12" fill="url(#angelBody)" stroke="url(#angelRim)" stroke-width="1.1" transform="rotate(12 62 91)"/>
+    <!-- near wing (in front of body), smaller, folded down the back -->
+    <path d="M47 112 C 40 128, 34 150, 30 178 C 34 174, 38 172, 41 172 C 38 186, 37 198, 38 212
+             C 41 200, 44 192, 48 186 C 48 198, 50 208, 53 216 C 54 196, 54 170, 54 150
+             C 54 136, 52 122, 47 112 Z"
+          fill="#231a36" stroke="url(#angelRim)" stroke-width="0.8" stroke-opacity="0.8"/>
+    <!-- halo -->
+    <ellipse cx="60" cy="72" rx="14" ry="4.2" fill="none" stroke="#ffe7a8" stroke-width="2" transform="rotate(-10 60 72)" filter="url(#glow)"/>
+    <!-- motes and a drifting feather -->
+    <g fill="#ffe7a8" filter="url(#mote)">
+      <circle cx="18" cy="70" r="1.3" opacity="0.8"/><circle cx="84" cy="54" r="1" opacity="0.7"/>
+      <circle cx="30" cy="300" r="1.1" opacity="0.5"/><circle cx="88" cy="210" r="0.9" opacity="0.6"/>
+      <circle cx="10" cy="150" r="0.9" opacity="0.6"/><circle cx="74" cy="30" r="1.2" opacity="0.7"/>
+    </g>
+    <path d="M86 280 C 90 276, 95 276, 97 279 C 93 281, 89 282, 86 280 Z" fill="#fff0c4" opacity="0.55"/>
+  </g>
+
+  <!-- ===================== DEMON (right) ===================== -->
+  <g id="demon">
+    <circle cx="590" cy="300" r="46" fill="#ff5a2a" opacity="0.22" filter="url(#softglow)"/>
+    <!-- bat wing raised behind, sweeping off the top-right -->
+    <path d="M598 122 C 606 84, 620 50, 650 18 L 652 56 C 646 62, 640 70, 636 80
+             C 642 84, 648 92, 652 104 C 644 104, 636 108, 630 116 C 638 124, 644 134, 648 148
+             C 638 146, 628 148, 620 154 C 624 164, 626 174, 626 186 C 618 178, 610 174, 602 172 Z"
+          fill="url(#demonBody)" stroke="url(#demonRim)" stroke-width="1" stroke-opacity="0.8"/>
+    <!-- wing finger bones -->
+    <g fill="none" stroke="#ff7a52" stroke-opacity="0.45" stroke-width="0.8" stroke-linecap="round">
+      <path d="M600 124 L 650 20"/><path d="M601 128 L 636 80"/><path d="M602 136 L 630 116"/><path d="M603 146 L 620 154"/>
+    </g>
+    <!-- body: leaning toward the board, one clawed arm reaching in -->
+    <path d="M590 112 C 598 114, 604 120, 606 130 C 609 146, 608 162, 604 178 C 604 196, 608 216, 612 236
+             C 616 260, 620 300, 624 362 L 562 362 C 566 330, 570 300, 572 272 C 574 246, 572 222, 570 202
+             C 566 196, 562 188, 560 180 C 556 176, 552 172, 547 170 C 544 168, 542 166, 543 164
+             C 546 164, 549 165, 552 166 C 549 162, 547 158, 547 154 C 550 155, 553 158, 556 162
+             C 556 157, 556 152, 558 148 C 560 152, 561 158, 562 164 C 564 158, 566 150, 568 140
+             C 570 130, 574 120, 580 115 C 583 113, 586 112, 590 112 Z"
+          fill="url(#demonBody)" stroke="url(#demonRim)" stroke-width="1.1"/>
+    <!-- muscle lines -->
+    <g fill="none" stroke="#ff7a52" stroke-opacity="0.25" stroke-width="0.8">
+      <path d="M584 140 C 588 160, 590 180, 588 200"/><path d="M594 210 C 598 250, 600 300, 602 360"/>
+      <path d="M580 214 C 580 260, 578 310, 576 360"/>
+    </g>
+    <!-- head with curling horns and a pointed ear -->
+    <ellipse cx="584" cy="100" rx="10" ry="12" fill="url(#demonBody)" stroke="url(#demonRim)" stroke-width="1.1" transform="rotate(-14 584 100)"/>
+    <path d="M590 90 C 596 80, 600 70, 598 58 C 604 66, 606 78, 600 90 Z" fill="#2a0f16" stroke="#ffb08a" stroke-width="0.8" stroke-opacity="0.9"/>
+    <path d="M580 88 C 578 78, 572 70, 564 66 C 572 74, 574 82, 576 92 Z" fill="#2a0f16" stroke="#ffb08a" stroke-width="0.8" stroke-opacity="0.9"/>
+    <path d="M593 100 L 600 96 L 594 106 Z" fill="#2a0f16" stroke="#ff7a52" stroke-width="0.6" stroke-opacity="0.8"/>
+    <!-- eye glint -->
+    <circle cx="577" cy="100" r="1.4" fill="#ffcf6a" filter="url(#glow)"/>
+    <!-- tail curling round the front -->
+    <path d="M600 300 C 584 312, 566 316, 556 306 C 550 300, 552 292, 558 292" fill="none" stroke="#2a0f16" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M600 300 C 584 312, 566 316, 556 306 C 550 300, 552 292, 558 292" fill="none" stroke="#ff7a52" stroke-opacity="0.6" stroke-width="0.8" stroke-linecap="round"/>
+    <path d="M557 292 L 551 284 L 563 288 Z" fill="#2a0f16" stroke="#ffb08a" stroke-width="0.7"/>
+    <!-- embers rising -->
+    <g fill="#ffb066" filter="url(#mote)">
+      <circle cx="620" cy="250" r="1.3" opacity="0.85"/><circle cx="560" cy="230" r="1" opacity="0.7"/>
+      <circle cx="632" cy="190" r="0.9" opacity="0.6"/><circle cx="548" cy="320" r="1.2" opacity="0.8"/>
+      <circle cx="612" cy="70" r="0.9" opacity="0.5"/><circle cx="570" cy="40" r="1" opacity="0.45"/>
+    </g>
+  </g>
+</g>
+
+<!-- frame around the game window -->
+<rect x="100.5" y="15.5" width="439" height="329" rx="6" fill="none" stroke="url(#frameGrad)" stroke-width="1.6" filter="url(#glow)" opacity="0.9"/>
+<rect x="97" y="12" width="446" height="336" rx="8" fill="none" stroke="url(#frameGrad)" stroke-width="0.6" opacity="0.45"/>
+<g fill="url(#frameGrad)">
+  <path d="M320 9 L 324 13 L 320 17 L 316 13 Z" opacity="0.9"/>
+  <path d="M320 343 L 324 347 L 320 351 L 316 347 Z" opacity="0.9"/>
+</g>
+</svg>
+</body></html>
