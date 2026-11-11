@@ -1,0 +1,7 @@
+# Caddy in front of Soulscale: real HTTPS certificate (automatic), WebSockets pass straight through.
+# Replace the host name with yours, point its DNS A record at this machine, then:
+#   sudo cp deploy/Caddyfile /etc/caddy/Caddyfile && sudo systemctl reload caddy
+# In the Discord Developer Portal set Activities > URL Mappings: prefix "/" -> soulscale.example.com
+soulscale.example.com {
+	reverse_proxy 127.0.0.1:3001
+}

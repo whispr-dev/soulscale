@@ -1,0 +1,26 @@
+# systemd unit for the Soulscale server.
+#   sudo cp deploy/soulscale.service /etc/systemd/system/
+#   sudo systemctl daemon-reload && sudo systemctl enable --now soulscale
+#   journalctl -u soulscale -f        # live log
+[Unit]
+Description=Soulscale game server (Discord Activity)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=soulscale
+Group=soulscale
+WorkingDirectory=/opt/soulscale
+EnvironmentFile=/opt/soulscale/.env
+ExecStart=/opt/soulscale/soulscale-server
+Restart=on-failure
+RestartSec=2
+# Lock it down: it only needs to write saved games.
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/soulscale/data
+
+[Install]
+WantedBy=multi-user.target
